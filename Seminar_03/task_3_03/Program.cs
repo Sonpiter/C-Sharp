@@ -5,9 +5,9 @@
 // [1 3 2 4 2 3] => [3 6 8]
 // [2 3 1 7 5 6 3] => [6 18 5] (элемент 7 не имеет пары)
 
-int[] numbers = {1, -5, 6, 6, 3, 9, -7};
+int[] numbers = { 1, -5, 6, 6, 3, 9, -7 };
 
-foreach(int number in numbers)
+foreach (int number in numbers)
 {
     System.Console.Write(number + "\t");
 }
@@ -20,12 +20,12 @@ int[] multPairs = new int[numbers.Length / 2];
 //     multPairs[i] = numbers[i] * numbers[numbers.Length - 1 - i];
 // }
 
-for(int i = 0, j = numbers.Length - 1; i < multPairs.Length; i++, j--)
+for (int i = 0, j = numbers.Length - 1; i < multPairs.Length; i++, j--)
 {
     multPairs[i] = numbers[i] * numbers[j];
 }
 
-foreach(int pair in multPairs)
+foreach (int pair in multPairs)
 {
     System.Console.Write(pair + " ");
 }
